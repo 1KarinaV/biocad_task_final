@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&family=Poppins:wght@600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <title>BIOCAD</title>
+</head>
+<body>
+<nav>
+    <a href="main.html" class="logo" style="color: inherit">
+        <span class="img-container"><img src="img/new_logo.png" alt=""></span>
+    </a>
+    <div class="pages">
+        <div class="page-name active">
+            <a href="main.html">Главная</a>
+        </div>
+        <div class="page-name">
+            <a href="analytics.html">Аналитика</a>
+        </div>
+    </div>
+    <div class="profile">
+        <img src="img/ava40_2.png" alt="Profile picture">
+    </div>
+</nav>
+<div class="main_m">
+    <div class="search-bar">
+        <input id="search-input" placeholder="Поиск прибора в Botanique по номеру, названию, подразделению и др."></input>
+        <img src="img/qr_code_scanner-24px.png" alt="">
+    </div>
+    <div class="favorites"><img src="img/color.png" alt=""><span>Любимые приборы</span></div>
+    <div class="tools">
+        <div class="head">
+            <p class="title">Название</p>
+            <p class="state">Статус</p>
+        </div>
+        <div class="tool">
+            <a class="tool-link" href="analytics.html?id=${result.id}">
+                <img class="tool-image" src="img/pH.png" alt="">
+                <p class="title">pH-метр Mettler-Toledo International, Inc. SevenCompact S220</p>
+            </a>
+            <div class="state-block">
+                <select name="tool-select" id="tool-select">
+                    <option value="available">Свободен</option>
+                    <option value="taken">Занят</option>
+                </select>
+                <img class="bell-image" src="img/bell-1.png" alt="">
+            </div>
+        </div>
+        <div class="tool">
+            <img class="tool-image" src="img/cпектр.png" alt="">
+            <p class="title">Спектрофотометр Varian, Inc Cary 50 Bio</p>
+            <div class="state-block">
+                <select name="tool-select">
+                    <option value="available">Свободен</option>
+                    <option value="taken">Занят</option>
+                </select>
+                <img class="bell-image" src="img/bell-1.png" alt="">
+            </div>
+        </div>
+        <div class="tool">
+            <img class="tool-image" src="img/Титратор.png" alt="">
+            <p class="title">Титратор</p>
+            <div class="state-block">
+                <select name="tool-select">
+                    <option value="available">Свободен</option>
+                    <option value="taken">Занят</option>
+                </select>
+                <img class="bell-image" src="img/bell-2.png" alt="">
+            </div>
+        </div>
+        <div class="tool">
+            <img class="tool-image" src="img/Коагулометр.png" alt="">
+            <p class="title">Коагулометр Tcoag, KC 4 Delta</p>
+            <div class="state-block">
+                <select name="tool-select">
+                    <option value="available">Свободен</option>
+                    <option value="taken">Занят</option>
+                </select>
+                <img class="bell-image" src="img/bell-3.png" alt="">
+            </div>
+        </div>
+        <div class="tool">
+            <img class="tool-image" src="img/Коагулометр.png" alt="">
+            <p class="title">Коагулометр Tcoag, KC 4 Delta</p>
+            <div class="state-block">
+                <select name="tool-select">
+                    <option value="available">Свободен</option>
+                    <option value="taken">Занят</option>
+                </select>
+                <img class="bell-image" src="img/bell-3.png" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script
+        src="https://code.jquery.com/jquery-3.6.1.slim.js"
+        integrity="sha256-tXm+sa1uzsbFnbXt8GJqsgi2Tw+m4BLGDof6eUPjbtk="
+        crossorigin="anonymous"></script>
+<script type="text/javascript" src="public/js/script.js"></script>
+</html>
